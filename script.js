@@ -1,7 +1,8 @@
+
 const projectsBtn = document.getElementById("projectsBtn");
 
 if (projectsBtn) {
-    projectsBtn.addEventListener("click", function () {
+    projectsBtn.addEventListener("click", () => {
         window.location.href = "projects.html";
     });
 }
