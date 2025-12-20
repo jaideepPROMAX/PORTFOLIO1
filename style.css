@@ -1,1 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #eaeaea;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1aff00;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1aff00;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    color: #1aff00;
+}
+
+.hero h2 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero h2 span {
+    color: #1aff00;
+}
+
+.hero p {
+    max-width: 500px;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #cfcfcf;
+}
+
+.hero button {
+    margin-top: 30px;
+    width: 180px;
+    padding: 12px;
+    border: none;
+    background-color: #1aff00;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #13cc00;
+}
+
+/* OTHER PAGES */
+.page-container {
+    padding: 80px;
+}
+
+.project-box {
+    border-left: 4px solid #1aff00;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #0e0e0e;
+}
+
+.contact-info p {
+    margin-top: 15px;
+}
 
