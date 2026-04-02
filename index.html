@@ -1,39 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jaideep Eemani | Film Director</title>
+  <meta charset="UTF-8">
+  <title>Jaideep Films</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    header p {
+      color: #aaa;
+      margin: 10px 0 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background: #fff;
+      color: #000;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
 
-<nav class="navbar">
-    <div class="logo">JAIDEEP <span>EEMANI</span></div>
+  <!-- Hero Section -->
+  <header>
+    <h1>JAIDEEP FILMS</h1>
+    <p>Cinematic Storytelling • Visual Emotion • Creative Direction</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<section class="hero">
-    <h1>Telugu Film Director</h1>
-    <h2>JAIDEEP <span>EEMANI</span></h2>
-
+  <!-- About -->
+  <section>
+    <h2>About Me</h2>
     <p>
-        Aspiring filmmaker passionate about cinematic storytelling,
-        strong visuals, and emotionally grounded Telugu cinema.
+      I’m a filmmaker passionate about creating cinematic visuals and emotional stories.
+      I focus on storytelling, cinematography, and high-quality visual experiences.
     </p>
+  </section>
 
-    <button id="projectsBtn">View My Work</button>
-</section>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
 
-<script src="script.js"></script>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Project">
+        <h3>MRTA</h3>
+        <p>Short Film Project</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Project">
+        <h3>Project 2</h3>
+        <p>Cinematic Work</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Project">
+        <h3>Project 3</h3>
+        <p>Creative Direction</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <p>Let’s create something cinematic together.</p>
+    <a href="mailto:your@email.com" class="btn">Email Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Jaideep Films
+  </footer>
+
 </body>
 </html>
