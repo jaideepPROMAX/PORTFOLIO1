@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Social | Jaideep Films</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #aaa;
+}
+
+/* HEADER */
+header {
+  padding: 120px 20px 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header p {
+  color: #aaa;
+}
+
+/* SOCIAL CARDS */
+.social-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px 80px;
+  display: grid;
+  gap: 25px;
+}
+
+.card {
+  background: #111;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="projects.html">FILMS</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="#">SOCIAL</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1>Social Hub</h1>
+  <p>Follow my journey & watch my content 🚀</p>
+</header>
+
+<!-- SOCIAL LINKS -->
+<section class="social-container">
+
+  <!-- Instagram Main -->
+  <div class="card">
+    <h2>Instagram (Main)</h2>
+    <p>Reels, cinematic edits, creative visuals</p>
+    <a href="https://www.instagram.com/jaideep_creates/" target="_blank" class="btn">
+      Open Instagram
+    </a>
+  </div>
+
+  <!-- Instagram Personal -->
+  <div class="card">
+    <h2>Instagram (Personal)</h2>
+    <p>Behind the scenes & lifestyle content</p>
+    <a href="https://www.instagram.com/jaideepeemani/" target="_blank" class="btn">
+      View Profile
+    </a>
+  </div>
+
+  <!-- YouTube Main -->
+  <div class="card">
+    <h2>YouTube (Main)</h2>
+    <p>Watch films, edits, and cinematic videos</p>
+    <a href="https://www.youtube.com/@jaideep_creates" target="_blank" class="btn">
+      Watch Now
+    </a>
+  </div>
+
+  <!-- YouTube Alt -->
+  <div class="card">
+    <h2>YouTube (Alt)</h2>
+    <p>More content and creative uploads</p>
+    <a href="https://youtube.com/@jaideepeemani" target="_blank" class="btn">
+      Explore
+    </a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Jaideep Films
+</footer>
+
+</body>
+</html>
