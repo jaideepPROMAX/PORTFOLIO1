@@ -8,82 +8,107 @@
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #000;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #111, #000);
   color: #fff;
 }
 
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* NAVBAR */
 nav {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
+  gap: 30px;
+  z-index: 1000;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
+  opacity: 0.8;
 }
 
 nav a:hover {
-  color: #aaa;
+  opacity: 1;
 }
 
+/* HERO */
 header {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero-box {
+  padding: 60px;
   text-align: center;
-  background: linear-gradient(to bottom, #000, #111);
+  max-width: 600px;
 }
 
-header h1 {
-  font-size: 70px;
+.hero-box h1 {
+  font-size: 60px;
+  margin: 0;
 }
 
-header p {
+.hero-box p {
   color: #aaa;
+  margin-top: 10px;
 }
 
+/* BUTTON */
 .btn {
+  display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: #fff;
-  color: #000;
-  border-radius: 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  color: #fff;
   text-decoration: none;
+  transition: 0.3s;
 }
 
+.btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* SECTION */
 section {
-  padding: 100px 20px;
-  max-width: 1100px;
-  margin: auto;
+  padding: 80px 20px;
   text-align: center;
 }
 
+/* SOCIAL */
 .social a {
-  margin: 10px;
   display: inline-block;
-  color: #fff;
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 12px;
   text-decoration: none;
-  border: 1px solid #333;
-  padding: 10px 15px;
-  border-radius: 10px;
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
 .social a:hover {
-  background: #fff;
-  color: #000;
+  background: rgba(255,255,255,0.2);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -94,44 +119,44 @@ footer {
 
 <body>
 
-<nav>
-  <a href="#">HOME</a>
-  <a href="projects.html">FILMS</a>
-  <a href="contact.html">CONTACT</a>
-  <a href="social.html">SOCIAL</a>
+<!-- NAVBAR -->
+<nav class="glass">
+  <a href="#">Home</a>
+  <a href="projects.html">Films</a>
+  <a href="contact.html">Contact</a>
+  <a href="social.html">Social</a>
 </nav>
 
+<!-- HERO -->
 <header>
-  <h1>JAIDEEP FILMS</h1>
-  <p>Cinematic Storytelling • Visual Emotion • Creative Direction</p>
-  <a href="projects.html" class="btn">Explore Films</a>
+  <div class="hero-box glass">
+    <h1>Jaideep Films</h1>
+    <p>Cinematic Storytelling • Visual Emotion</p>
+    <a href="projects.html" class="btn">Explore Films</a>
+  </div>
 </header>
 
+<!-- ABOUT -->
 <section>
-  <h2>About Me</h2>
-  <p>
-    Filmmaker crafting cinematic visuals and storytelling experiences.
-  </p>
-</section>
-
-<section id="social">
-  <h2>Connect With Me</h2>
-  <div class="social">
-    <a href="https://www.instagram.com/jaideep_creates/" target="_blank">
-      Instagram (Reels / Work)
-    </a>
-    <a href="https://www.instagram.com/jaideepeemani/" target="_blank">
-      Instagram (Personal)
-    </a>
-    <a href="https://www.youtube.com/@jaideep_creates" target="_blank">
-      YouTube (Main Channel)
-    </a>
-    <a href="https://youtube.com/@jaideepeemani" target="_blank">
-      YouTube (Alt Channel)
-    </a>
+  <div class="glass" style="padding:40px; max-width:700px; margin:auto;">
+    <h2>About Me</h2>
+    <p style="color:#aaa;">
+      Filmmaker crafting cinematic visuals and storytelling experiences.
+    </p>
   </div>
 </section>
 
+<!-- SOCIAL -->
+<section>
+  <h2>Connect</h2>
+  <div class="social">
+    <a href="https://www.instagram.com/jaideep_creates/" target="_blank">Instagram (Work)</a>
+    <a href="https://www.instagram.com/jaideepeemani/" target="_blank">Instagram (Personal)</a>
+    <a href="https://www.youtube.com/@jaideep_creates" target="_blank">YouTube</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   © 2026 Jaideep Films
 </footer>
