@@ -1,35 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact | Jaideep Eemani</title>
+  <meta charset="UTF-8">
+  <title>Contact | Jaideep Films</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      color: #aaa;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #111;
+      border-radius: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #222;
+      color: #fff;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #fff;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #ddd;
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
 
-<nav class="navbar">
-    <div class="logo">JAIDEEP <span>EEMANI</span></div>
+  <!-- Header -->
+  <header>
+    <h1>Contact Me</h1>
+    <p>Let’s create something cinematic together 🎥</p>
+  </header>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
 
-<div class="page-container">
-    <h1>Contact</h1>
-
-    <div class="contact-info">
-        <p>Email: jaideep@email.com</p>
-        <p>Instagram: @jaideep_eemani</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
+    <div class="info">
+      Or reach me directly:<br>
+      your@email.com
     </div>
-</div>
+  </div>
 
-<script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    © 2026 Jaideep Films
+  </footer>
+
 </body>
 </html>
-
-
