@@ -1,132 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jaideep Films</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Jaideep Films</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+}
 
-    header {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
 
-    header h1 {
-      font-size: 60px;
-      margin: 0;
-    }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
 
-    header p {
-      color: #aaa;
-      margin: 10px 0 20px;
-    }
+nav a:hover {
+  color: #aaa;
+}
 
-    .btn {
-      padding: 12px 24px;
-      background: #fff;
-      color: #000;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* HERO */
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #000, #111);
+  text-align: center;
+}
 
-    section {
-      padding: 80px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+header h1 {
+  font-size: 70px;
+}
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+header p {
+  color: #aaa;
+}
 
-    .card {
-      background: #111;
-      padding: 15px;
-      border-radius: 15px;
-    }
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
+.btn:hover {
+  background: #ddd;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-    }
-  </style>
+/* SECTION */
+section {
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* SOCIAL */
+.social a {
+  margin: 10px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- Hero Section -->
-  <header>
-    <h1>JAIDEEP FILMS</h1>
-    <p>Cinematic Storytelling • Visual Emotion • Creative Direction</p>
-    <a href="projects.html" class="btn">View My Work</a>
-  </header>
+<!-- NAVBAR -->
+<nav>
+  <a href="#">HOME</a>
+  <a href="projects.html">FILMS</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="#social">SOCIAL</a>
+</nav>
 
-  <!-- About -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I’m a filmmaker passionate about creating cinematic visuals and emotional stories.
-      I focus on storytelling, cinematography, and high-quality visual experiences.
-    </p>
-  </section>
+<!-- HERO -->
+<header>
+  <h1>JAIDEEP FILMS</h1>
+  <p>Cinematic Storytelling • Visual Emotion • Creative Direction</p>
+  <a href="projects.html" class="btn">Explore Films</a>
+</header>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <p>
+    Filmmaker passionate about creating cinematic visuals and powerful storytelling.
+  </p>
+</section>
 
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Project">
-        <h3>MRTA</h3>
-        <p>Short Film Project</p>
-      </div>
+<!-- SOCIAL MEDIA -->
+<section id="social">
+  <h2>Connect With Me</h2>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</section>
 
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Project">
-        <h3>Project 2</h3>
-        <p>Cinematic Work</p>
-      </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Project">
-        <h3>Project 3</h3>
-        <p>Creative Direction</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section>
-    <h2>Contact</h2>
-    <p>Let’s create something cinematic together.</p>
-    <a href="mailto:your@email.com" class="btn">Email Me</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    © 2026 Jaideep Films
-  </footer>
+<!-- FOOTER -->
+<footer>
+  © 2026 Jaideep Films
+</footer>
 
 </body>
 </html>
