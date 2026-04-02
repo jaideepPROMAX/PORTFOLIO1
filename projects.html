@@ -1,138 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects | Jaideep Films</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Films | Jaideep Films</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+}
 
-    header {
-      padding: 40px 20px;
-      text-align: center;
-    }
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-    header p {
-      color: #aaa;
-    }
+nav a:hover {
+  color: #aaa;
+}
 
-    .projects {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
+/* HEADER */
+header {
+  padding: 120px 20px 40px;
+  text-align: center;
+}
 
-    .card {
-      background: #111;
-      border-radius: 15px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+header h1 {
+  font-size: 40px;
+}
 
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(255,255,255,0.1);
-    }
+header p {
+  color: #aaa;
+}
 
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
+/* GRID */
+.projects {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
 
-    .card-content {
-      padding: 15px;
-    }
+/* CARD */
+.card {
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  position: relative;
+}
 
-    .card h3 {
-      margin: 0 0 8px;
-    }
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.1);
+}
 
-    .card p {
-      color: #aaa;
-      font-size: 14px;
-    }
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 16px;
-      background: #fff;
-      color: #000;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 14px;
-    }
+.card-content {
+  padding: 15px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-    }
-  </style>
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>My Projects</h1>
-    <p>Explore my cinematic works 🎥</p>
-  </header>
+<!-- NAVBAR -->
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="#">FILMS</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
 
-  <!-- Projects Grid -->
-  <section class="projects">
+<!-- HEADER -->
+<header>
+  <h1>My Films</h1>
+  <p>Explore my cinematic work 🎥</p>
+</header>
 
-    <!-- Project 1 -->
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="MRTA">
-      <div class="card-content">
-        <h3>MRTA</h3>
-        <p>Short Film exploring emotion and storytelling.</p>
-        <a href="#" class="btn">Watch</a>
-      </div>
+<!-- PROJECTS -->
+<section class="projects">
+
+  <!-- MRTA -->
+  <div class="card">
+    <img src="https://via.placeholder.com/400x250" alt="MRTA">
+    <div class="card-content">
+      <h3>MRTA</h3>
+      <p>Emotional short film storytelling.</p>
+      <a href="https://www.youtube.com/@jaideep_creates" target="_blank" class="btn">
+        Watch Now
+      </a>
     </div>
+  </div>
 
-    <!-- Project 2 -->
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Project 2">
-      <div class="card-content">
-        <h3>Cinematic Reel</h3>
-        <p>High-quality visual storytelling shots.</p>
-        <a href="#" class="btn">Watch</a>
-      </div>
+  <!-- REELS -->
+  <div class="card">
+    <img src="https://via.placeholder.com/400x250" alt="Reels">
+    <div class="card-content">
+      <h3>Reels Collection</h3>
+      <p>Cinematic reels and trending visuals.</p>
+      <a href="https://www.instagram.com/jaideep_creates/" target="_blank" class="btn">
+        View Reels
+      </a>
     </div>
+  </div>
 
-    <!-- Project 3 -->
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Project 3">
-      <div class="card-content">
-        <h3>Creative Ad</h3>
-        <p>Product-style cinematic advertisement.</p>
-        <a href="#" class="btn">Watch</a>
-      </div>
+  <!-- PERSONAL -->
+  <div class="card">
+    <img src="https://via.placeholder.com/400x250" alt="Personal">
+    <div class="card-content">
+      <h3>Behind The Scenes</h3>
+      <p>Personal content & lifestyle visuals.</p>
+      <a href="https://www.instagram.com/jaideepeemani/" target="_blank" class="btn">
+        View More
+      </a>
     </div>
+  </div>
 
-  </section>
+  <!-- YOUTUBE ALT -->
+  <div class="card">
+    <img src="https://via.placeholder.com/400x250" alt="YouTube">
+    <div class="card-content">
+      <h3>More Videos</h3>
+      <p>Extra cinematic uploads and edits.</p>
+      <a href="https://youtube.com/@jaideepeemani" target="_blank" class="btn">
+        Watch
+      </a>
+    </div>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    © 2026 Jaideep Films
-  </footer>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Jaideep Films
+</footer>
 
 </body>
 </html>
